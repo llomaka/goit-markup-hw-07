@@ -579,15 +579,18 @@
 }
 
 .slinks-link {
-  padding: 12px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: transparent;
-  border-radius: 25px;
+  border-radius: 50%;
   transition: background-color 250ms var(--timing-function),
     color 250ms var(--timing-function);
 }
 
 .slinks-icon {
-  display: block;
   fill: currentColor;
 }
 
