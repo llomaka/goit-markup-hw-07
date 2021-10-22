@@ -584,7 +584,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: transparent;
   border-radius: 50%;
   transition: background-color 250ms var(--timing-function),
     color 250ms var(--timing-function);
