@@ -39,15 +39,6 @@
   }
 }
 
-.form__icon {
-  position: absolute;
-  top: 50%;
-  left: 12px;
-  fill: currentColor;
-  transform: translateY(-50%);
-  transition: fill 250ms $timing-function;
-}
-
 .form__label,
 .form__comments {
   display: block;
@@ -67,7 +58,6 @@
 
 .form__label--checkbox {
   padding-left: 35px;
-  color: $secondary-text-color;
 }
 
 .form__comments {
@@ -94,17 +84,16 @@
 
 .form__icon {
   position: absolute;
+  top: 50%;
   left: 12px;
   width: 16px;
   height: 15px;
+  fill: currentColor;
   pointer-events: none;
+  transform: translateY(-50%);
+  transition: fill 250ms $timing-function;
   .form__field:focus-within & {
     fill: $accent-color;
-  }
-  .form__terms:checked ~ & {
-    top: 50%;
-    fill: $accent-color;
-    transform: translateY(-50%);
   }
 }
 
@@ -147,24 +136,5 @@
 }
 
 .form__button {
-  min-width: 200px;
-  padding: 10px 0px;
-  font-family: inherit;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  border-radius: 4px;
-  color: $white-color;
-  background-color: $accent-color;
-  border-color: transparent;
-  box-shadow: none;
-  cursor: pointer;
-  transition: background-color 250ms $timing-function,
-    box-shadow 250ms $timing-function;
-  &:hover,
-  &:focus {
-    background-color: $hero-btn-accent-color;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  }
+  @extend %button;
 }

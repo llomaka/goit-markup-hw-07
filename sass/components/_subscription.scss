@@ -3,8 +3,8 @@
 }
 
 .subscription__title {
-  margin: 0px 0px 20px 0px;
-  padding: 12px 0px 0px;
+  margin-bottom: 20px;
+  padding-top: 12px;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
@@ -28,7 +28,7 @@
     color: $footer-contatcs-color;
   }
   &:focus-within {
-    border: 1px solid $footer-logo-color;
+    border: 1px solid $white-color;
   }
 }
 
@@ -38,7 +38,6 @@
   justify-content: center;
   align-items: center;
   margin-left: 12px;
-  border-color: transparent;
 }
 
 .subscription__icon {

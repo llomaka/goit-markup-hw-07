@@ -19,18 +19,8 @@
 }
 
 .footer__post-address {
-  margin: 0px;
   transition: color 250ms $timing-function;
   &:hover {
-    color: $accent-color;
-  }
-}
-
-.footer__link {
-  color: $footer-contatcs-color;
-  transition: color 250ms $timing-function;
-  &:hover,
-  &:focus {
     color: $accent-color;
   }
 }
@@ -42,4 +32,13 @@
 .footer__post-address,
 .footer__item:not(:last-child) {
   margin-bottom: 9px;
+}
+
+.footer__link {
+  color: $footer-contatcs-color;
+  transition: color 250ms $timing-function;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
