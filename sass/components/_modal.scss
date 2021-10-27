@@ -11,9 +11,9 @@
   border-radius: 4px;
   background-color: $white-color;
   transition: transform 250ms $timing-function;
-  // .hero__backdrop--hidden & {
-  //   transform: translate(-50%, -50%) scale(0.2);
-  // }
+  .backdrop.backdrop--hidden & {
+    transform: translate(-50%, -50%) scale(0.2);
+  }
 }
 
 .modal__button {

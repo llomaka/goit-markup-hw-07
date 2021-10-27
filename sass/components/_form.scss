@@ -1,5 +1,9 @@
+.form {
+  text-align: center;
+}
+
 .form__title {
-  margin: 0px 0px 2px 0px;
+  margin-bottom: 4px;
   font-size: 20px;
   line-height: 1.15;
   color: $primary-text-color;
@@ -8,11 +12,15 @@
 .form__field {
   position: relative;
   text-align: left;
+  &:last-child {
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
 }
 
-.form__field:last-child {
-  overflow: hidden;
-  margin-bottom: 30px;
+.form__field--center-aligned {
+  display: flex;
+  align-items: center;
 }
 
 .form__input {
@@ -26,6 +34,9 @@
   color: $primary-text-color;
   outline: none;
   transition: border 250ms $timing-function;
+  .form__field:focus-within & {
+    border: 1px solid $accent-color;
+  }
 }
 
 .form__icon {
@@ -43,19 +54,18 @@
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01rem;
-  color: $secondary-text-color;
 }
 
 .form__label {
   margin-bottom: 4px;
   text-align: left;
+  color: $secondary-text-color;
+  &:not(:first-child) {
+    padding-top: 8px;
+  }
 }
 
-.form__label:not(:first-child) {
-  padding-top: 10px;
-}
-
-.form__label--light {
+.form__label--checkbox {
   padding-left: 35px;
   color: $secondary-text-color;
 }
@@ -84,7 +94,6 @@
 
 .form__icon {
   position: absolute;
-  top: -100%;
   left: 12px;
   width: 16px;
   height: 15px;
@@ -97,6 +106,10 @@
     fill: $accent-color;
     transform: translateY(-50%);
   }
+}
+
+.form__terms--hidden {
+  @extend %visually-hidden;
 }
 
 .form__icon--drawing {
@@ -114,15 +127,23 @@
   }
 }
 
+.form__checkbox {
+  position: absolute;
+  top: -100%;
+  left: 12px;
+  width: 16px;
+  height: 15px;
+  pointer-events: none;
+  .form__terms:checked ~ & {
+    top: 50%;
+    fill: $accent-color;
+    transform: translateY(-50%);
+  }
+}
+
 .form__link {
   text-decoration: underline;
   color: $accent-color;
-}
-
-.form__input {
-  .form__field:focus-within & {
-    border: 1px solid $accent-color;
-  }
 }
 
 .form__button {
