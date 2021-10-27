@@ -1,19 +1,18 @@
 @import 'utils/variables';
+@import 'utils/mixins';
+@import 'utils/no-browser-styles';
+@import 'utils/extend';
+@import 'components/page';
 @import 'components/container';
-
-.page {
-  margin: 0px;
-  padding: 0px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: $primary-text-color;
-  background-color: $white-color;
-}
-
-.container {
-  margin-left: auto;
-  margin-right: auto;
-}
+@import 'components/header';
+@import 'components/menu';
+@import 'components/logo';
+@import 'components/section';
+@import 'components/button';
+@import 'components/hero';
+@import 'components/modal';
+@import 'components/form';
+@import 'components/features';
+@import 'components/services';
+@import 'components/team';
+@import 'components/social';
