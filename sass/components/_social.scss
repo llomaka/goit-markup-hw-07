@@ -1,3 +1,17 @@
+.social {
+  width: 206px;
+  margin-left: 70px;
+}
+
+.social__title {
+  margin: 0px 0px 20px 0px;
+  padding: 12px 0px 0px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
 .social__list {
   display: flex;
   justify-content: space-between;
@@ -29,6 +43,15 @@
   &:focus {
     color: $white-color;
     background-color: $accent-color;
+  }
+  .footer & {
+    background-color: $footer-icon-background;
+    color: $white-color;
+  }
+  .footer &:hover,
+  .footer &:focus {
+    background-color: $accent-color;
+    color: $white-color;
   }
 }
 
