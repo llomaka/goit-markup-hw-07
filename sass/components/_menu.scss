@@ -16,15 +16,22 @@
   margin-right: 50px;
 }
 
-.menu__link {
-  display: block;
-  padding: 32px 0px;
+.menu__list--navigation {
+  margin-left: 93px;
+}
+
+.menu__list--navigation .menu__link {
   color: $primary-text-color;
   transition: color 250ms $timing-function;
   &:hover,
   &:focus {
     color: $accent-color;
   }
+}
+
+.menu__link {
+  display: block;
+  padding: 32px 0px;
 }
 
 .menu__link--highlighted {
@@ -40,10 +47,6 @@
     border-radius: 2px;
     background-color: $accent-color;
   }
-}
-
-.menu__list--navigation {
-  margin-left: 93px;
 }
 
 .menu__list--contacts {

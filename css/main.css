@@ -115,16 +115,23 @@ p {
   margin-right: 50px;
 }
 
-.menu__link {
-  display: block;
-  padding: 32px 0px;
+.menu__list--navigation {
+  margin-left: 93px;
+}
+
+.menu__list--navigation .menu__link {
   color: #212121;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu__link:hover, .menu__link:focus {
+.menu__list--navigation .menu__link:hover, .menu__list--navigation .menu__link:focus {
   color: #2196f3;
+}
+
+.menu__link {
+  display: block;
+  padding: 32px 0px;
 }
 
 .menu__link--highlighted {
@@ -141,10 +148,6 @@ p {
   height: 4px;
   border-radius: 2px;
   background-color: #2196f3;
-}
-
-.menu__list--navigation {
-  margin-left: 93px;
 }
 
 .menu__list--contacts {
