@@ -4,10 +4,9 @@
 
 .features__item {
   flex-basis: calc((100% - 3 * 30px) / 4);
-}
-
-.features__item:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .features__icon {
